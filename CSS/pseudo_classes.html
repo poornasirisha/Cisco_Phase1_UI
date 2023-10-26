@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+             
+ 
+        a:visited{
+            color:brown;
+        }
+        a:hover{
+            color: red;
+        }
+        a:active{
+            color:green;
+        }
+
+        button:active{
+            background-color: green;
+        } 
+        input:focus{
+            background-color: yellow;
+            border: 5px solid green;
+        }
+
+        li:nth-child(odd){
+            background-color: grey;
+        }
+
+        li:nth-child(even){
+            background-color: lightgrey;
+        }
+        div >p:not(.special){
+            background-color: red !important
+        }   
+        div >p:first-child{
+            background-color: yellow;;
+        }
+
+        p:last-child{
+            background-color: pink;
+        }
+
+        p.language:lang(en){
+            font-weight: bold;
+            color: red;
+        }    
+  
+    </style>
+    
+    <p><a href="#">Hover me</a></p>
+
+    <input type="text">
+
+    <button>Click</button>
+
+    <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+        <li>Item4</li>
+        <li>Item3</li>
+        <li>Item4</li>
+        <li>Item3</li>
+        <li>Item4</li>
+    </ul>
+
+    <div>
+    <p>First Child</p>
+    <p class="special">First Child</p>
+    <p>First Child</p>
+    <p>First Child</p>
+    </div>
+
+    <p class="language" lang="en">This is an english paragraph</p>
+    <p class="language" lang="fr">This is a French  paragraph</p>
+</body>
+</html>

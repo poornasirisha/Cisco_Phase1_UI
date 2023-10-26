@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested Navigation Menu</title>
+    <style>
+        /* Add some basic styling for demonstration purposes */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        ul ul {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">About</a>
+                <ul>
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">History</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Services</a>
+                <ul>
+                    <li>
+                        <a href="#">Web Design</a>
+                        <ul>
+                            <li><a href="#">Responsive Design</a></li>
+                            <li><a href="#">UI/UX Design</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">SEO</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

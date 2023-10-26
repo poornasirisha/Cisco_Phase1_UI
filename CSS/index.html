@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            margin:10px;
+        }
+
+        /* Name selector */
+        p{
+            color:red;
+            margin:10px;
+        }
+
+        /* class selector */
+        .para{
+            font-size: larger;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* Id selector */
+        #p1{
+            text-align: center;
+
+        }
+
+        .box-model{
+            background-color: lightblue;
+            width:50%;
+            border: 5px solid black;
+            padding:50px;
+            margin:20px;
+        }
+    </style>
+    <h1 class="para">Heading</h1>
+    <p class="para" id="p1">Paragraph</p>
+
+    <div>
+        <p>Child1</p>
+        <section><p>Descendant</p></section>
+    </div>
+
+
+    <div class="box-model">
+        Some content
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .parent ~ p{
+            color:blue
+        }
+
+        /*  Combinators
+        child selector: >
+        descendant selector: space
+        adjacent sibling: + 
+        general sibling: ~
+        
+        */
+
+
+        .ul1 > li{
+            list-style-type: square;
+           
+        }
+
+        ul.ul1{
+            color:red;
+        }
+    </style>
+    
+    <div class="parent">
+        <p class="ul1">This is direct child</p>
+        <section>
+            <p>This is a paragraph inside a parent div</p>
+        </section>
+        <p>Direct child</p>
+    </div>
+    <p>Not a child but a sibling (Adjacent Sibling)</p>
+    <p>Not a child but a sibling</p>
+
+    <ul class="ul1">
+        <li>Item1</li>
+        <li>Item2</li>
+    </ul>
+
+    <ul>
+        <li>Item3</li>
+    </ul>
+</body>
+</html>

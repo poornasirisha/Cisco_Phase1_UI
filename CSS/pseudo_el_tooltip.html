@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .tooltip-container{
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip-text{
+            display:none;
+            position:absolute;
+            background-color: #333;
+            color:white;
+            border-radius:5px;
+            z-index: 1;
+        }
+
+        .tooltip-container:hover .tooltip-text{
+            display: block;
+        }
+
+        .tooltip-container:hover .tooltip-text::after{
+            content: "";
+            position: absolute;
+            top:100%;
+            left:50%;
+            margin-left: -5px;
+            border: 5px solid #333;
+        }
+
+        li::before{
+            content: url("");
+        }
+
+
+    </style>
+    <h1>Heading</h1>
+    <p>Hover over this for a tooltip: 
+        <span class="tooltip-container">Hover me
+            <span class="tooltip-text">
+                This is a tooltip</span></span></p>
+
+    <ul>
+        <li>Item</li>
+    </ul>
+</body>
+</html>

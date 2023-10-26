@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .first-line::first-line{
+            text-transform: uppercase;
+            color: red;
+        }
+
+        .first-letter::first-letter{
+            font-size:20px;
+            color:green;
+        }
+        h1::before{
+            content: "Prefix";
+            font-weight: bold;
+            color:red;
+        }
+
+        h1::after{
+            content: "Suffix";
+            font-weight: bold;
+            color:red;
+        }
+    </style>    
+
+    <h1>This is heading</h1>
+
+    <p class="first-line">
+        This is a parapgrpah with some text.
+        This is a parapgrpah with some text.
+        This is a parapgrpah with some text.
+        This is a parapgrpah with some text.
+        This is a parapgrpah with some text.
+        This is a parapgrpah with some text.
+        This is a parapgrpah with some text.
+        This is a parapgrpah with some text.
+        This is a parapgrpah with some text.
+        This is a parapgrpah with some text.
+        This is a parapgrpah with some text.
+    </p>
+
+    <p class="first-letter">This is a parapgrpah with some text.</p>
+</body>
+</html>

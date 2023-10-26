@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Internal-->
+    <script>
+        var x;
+        x = 10.0;
+        var x = 'Hello';
+        x=true;
+
+        let y=10;
+        y = "hello";
+
+        const z = 10;
+        //z=20;
+
+        var x1;
+
+        console.log(x1);
+
+        x1 = {id:1};
+        x1=null;
+
+        let bigInt1 = BigInt(1234568987654356787652567654323);
+
+        //symbol
+        let id = Symbol("id");
+
+        let person = {
+            name:'abc'
+        }
+
+        person[id] = 1;
+
+        console.log(person.id);//undefined
+
+        console.log(person[id]);
+
+        const value1 = Symbol('hello');
+        const value2 = Symbol('hello');
+
+        console.log(value1 === value2);//false
+
+        console.log(10/0);
+        console.log(Math.sqrt(-1));
+
+    </script>
+    
+    <!--External-->
+    <script src="script.js"></script>
+</body>
+</html>

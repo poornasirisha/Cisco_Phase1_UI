@@ -1,0 +1,69 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: changeColor1;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count:2;
+}
+
+@keyframes changeColor{
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+@keyframes changeColor1 {
+    0% {background-color: red;}
+    25% {background-color: yellow;}
+    50% {background-color: blue;}
+    75% {background-color: green;}
+    100% {background-color: cyan;}    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0;
+    background-color: #f0f0f0;
+
+}
+
+.circle{
+    width:100px;
+    height:100px;
+    background-color: #3498db;
+    border-radius: 50%;
+    position: relative;
+    animation: scaleChangeColor 4s linear infinite;
+}
+
+@keyframes scaleChangeColor{
+    0%{
+        transform:scale(1);
+        background-color: cyan;
+    }
+
+    25%{
+        transform: scale(1.2);
+        background-color: orange;
+    }
+
+    50%{
+        transform: scale(1);
+        background-color: green;
+    }
+    
+    75%{
+        transform: scale(1.2);
+        background-color: orange;
+    }
+
+    100%{
+        transform: scale(1);
+        background-color: cyan;
+    }
+}
+
