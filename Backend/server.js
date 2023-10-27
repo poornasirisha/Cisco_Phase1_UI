@@ -51,7 +51,9 @@ app.post('/login', (req,res) => {
         res.status(401).json({message: 'Login Unsuccessful'});
     }
 
-})
+});
+
+
 app.listen(3000, ()=>{
     console.log("server is listening on port 3000");
 });
