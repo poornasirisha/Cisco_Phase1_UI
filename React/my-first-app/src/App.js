@@ -12,6 +12,8 @@ import UseEffectHook1 from './Components/UseEffectHook1';
 import FetchDataUseEffect from './Components/FetchDataUseEffect';
 import UseReducerHook from './Components/UseReducerHook';
 import UseReducerForm from './Components/UseReducerForm';
+import UseContextHook from './Components/UseContextHook';
+import LoginFormContextReducerEffect from './Components/LoginFormContextReducerEffect';
 
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 function App() {
@@ -59,6 +61,12 @@ function App() {
               <li>
                 <Link to ="/use-reducer-form">Use Reducer Form</Link>
               </li>
+              <li>
+                <Link to ="/use-context">Use Context</Link>
+              </li>
+              <li>
+                <Link to ="/login-context-reducer-effect">Login Form (Context)</Link>
+              </li>
             </ul>
           </nav>
           <hr />
@@ -71,6 +79,8 @@ function App() {
             <Route path="/list-rendering"  element = {<BookList name='ABC'/>} />
             <Route path="/parent"  element = {<ParentComponent />} />
             <Route path="/use-reducer-form"  element = {<UseReducerForm />} />
+            <Route path="/use-context"  element = {<UseContextHook />} />
+            <Route path="/login-context-reducer-effect" element = {<LoginFormContextReducerEffect />}/>
           </Routes>
         </div>
       </Router>
