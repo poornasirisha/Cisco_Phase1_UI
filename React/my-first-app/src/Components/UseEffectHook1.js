@@ -7,6 +7,7 @@ const UseEffectHook1 = () =>{
     useEffect(() =>{
         console.log('Component did mount (Initial render)');
 
+        //cleanup code
         return() =>{
             console.log('component will unmount')
         }
