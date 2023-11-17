@@ -14,6 +14,9 @@ import UseReducerHook from './Components/UseReducerHook';
 import UseReducerForm from './Components/UseReducerForm';
 import UseContextHook from './Components/UseContextHook';
 import LoginFormContextReducerEffect from './Components/LoginFormContextReducerEffect';
+import ExampleCustomHook from './Components/CustomHooks/ExampleCustomHook';
+import UseRefHook from './Components/UseRefHook';
+import ReduxParentComponent1 from './Components/Redux/ReduxParentComponent1';
 
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 function App() {
@@ -67,6 +70,16 @@ function App() {
               <li>
                 <Link to ="/login-context-reducer-effect">Login Form (Context)</Link>
               </li>
+              <li>
+                <Link to ="/custom-hook">Custom Hook</Link>
+              </li>
+              <li>
+                <Link to ="/use-ref">Use Ref</Link>
+              </li>
+              <li>
+                <Link to ="/redux">Redux</Link>
+              </li>
+
             </ul>
           </nav>
           <hr />
@@ -81,6 +94,9 @@ function App() {
             <Route path="/use-reducer-form"  element = {<UseReducerForm />} />
             <Route path="/use-context"  element = {<UseContextHook />} />
             <Route path="/login-context-reducer-effect" element = {<LoginFormContextReducerEffect />}/>
+            <Route path="/custom-hook" element = {<ExampleCustomHook />}/>
+            <Route path="/use-ref" element = {<UseRefHook />}/>
+            <Route path="/redux" element = {<ReduxParentComponent1 />}/>
           </Routes>
         </div>
       </Router>
