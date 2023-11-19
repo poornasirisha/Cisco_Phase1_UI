@@ -1,0 +1,8 @@
+.horizontal-nav li{
+  margin-right: 20px;
+}
+
+.horizontal-nav a{
+  text-decoration: none;
+  font-weight: bold;
+}
