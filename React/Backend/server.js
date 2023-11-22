@@ -32,6 +32,15 @@ app.post('/api/login', (req,res) =>{
     }
 });
 
+const products = [
+    {id:1, name:'Product1', price:20},
+    {id:2, name:'Product2', price:30}
+];
+
+app.get('/api/products', (req,res) => {
+    res.json(products);
+})
+
 app.listen(5000,()=>{
     console.log('server is listening at port 5000');
 })
