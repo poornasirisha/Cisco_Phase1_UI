@@ -17,6 +17,10 @@ import LoginFormContextReducerEffect from './Components/LoginFormContextReducerE
 import ExampleCustomHook from './Components/CustomHooks/ExampleCustomHook';
 import UseRefHook from './Components/UseRefHook';
 import ReduxParentComponent1 from './Components/Redux/ReduxParentComponent1';
+import ReduxParentProducts from './Components/Redux1/ReduxParentProducts';
+import ReactHookForm from './Components/ReactHookForms/ReactHookForm';
+import DynamicForm from './Components/ReactHookForms/DynamicForm';
+import SignUpForm from './Components/SignupForm';
 
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 function App() {
@@ -79,6 +83,19 @@ function App() {
               <li>
                 <Link to ="/redux">Redux</Link>
               </li>
+              <li>
+                <Link to ="/redux-thunk">Redux - products- Thunk</Link>
+              </li>
+              <li>
+                <Link to ="/react-hook-form">React Hook Form</Link>
+              </li>
+              <li>
+                <Link to ="/react-hook-form-dynamic">React Hook Form Dynamic</Link>
+              </li>
+              <li>
+                <Link to ="/signup">SignUp</Link>
+              </li>
+
 
             </ul>
           </nav>
@@ -97,6 +114,10 @@ function App() {
             <Route path="/custom-hook" element = {<ExampleCustomHook />}/>
             <Route path="/use-ref" element = {<UseRefHook />}/>
             <Route path="/redux" element = {<ReduxParentComponent1 />}/>
+            <Route path="/redux-thunk" element = {<ReduxParentProducts />}/>
+            <Route path="/react-hook-form" element = {<ReactHookForm />}/>
+            <Route path="/react-hook-form-dynamic" element = {<DynamicForm />}/>
+            <Route path="/signup" element = {<SignUpForm />}/>
           </Routes>
         </div>
       </Router>
